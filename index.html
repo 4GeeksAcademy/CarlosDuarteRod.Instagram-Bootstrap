@@ -10,9 +10,10 @@
 </head>
 <body>
   <div class="container-fluid">
+    <!-- Barra navegador -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <img src="https://static.vecteezy.com/system/resources/previews/008/385/736/non_2x/instagram-social-media-icon-symbol-element-illustration-free-vector.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        <a class="navbar-brand" href="#">Instagram</a>
+        <a class="navbar-brand" href="#"> <strong>Instagram</strong> </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -22,30 +23,37 @@
               <li class="nav-item dropdown">
               </li>
             </ul>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Launch static backdrop modal</button>
 
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
+            <!-- Boton modal que salta (primer boton) -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-
-                  <div class="modal-body">
-                    <p>Caption:</p>
-                    <input type="text" placeholder="Add the caption of your post here">
-                    <i class="fa-solid fa-camera"></i>
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
-                  </div>
                 </div>
-              </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text" placeholder=" Add the caption of your post here"></textarea>
+                        <button type="button" class="btn btn-outline-secondary mt-3 ">
+                          <i class="fa-solid fa-camera" style="color: #000000;"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary mt-3 ms-1">
+                          <i class="fa-sharp fa-solid fa-location-dot" style="color: #000000;"></i>
+                        </button>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+                </div>
+            </div>
             </div>
 
                 <!-- Boton ajustes -->
@@ -75,7 +83,6 @@
         <li class="nav-item">
           <a class="nav-link active" data-bs-toggle="tab" href="#mosaic-view"><i class="fa-solid fa-table-cells"></i></a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" href="#vertical-view"><i class="fa-solid fa-square" style="color: #216ef2;"></i></a>
         </li>
@@ -131,63 +138,63 @@
       <div class="container">
         <div class="tab-pane fade" id="vertical-view">
 
-          <div class="card">
+          <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title">My crazy dog Spark!</h1>
-              <p class="card-text">08/26</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
             <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
-            <h3 class="card-title text-start">204 Likes</h3>
-            <p class="card-text text-start">This is an example of a very good photo that you can post on instagram</p>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on instagram</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title">My crazy dog Spark!</h1>
-              <p class="card-text">08/26</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
             <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
-            <h3 class="card-title text-start">204 Likes</h3>
-            <p class="card-text text-start">This is an example of a very good photo that you can post on instagram</p>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on instagram</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title">My crazy dog Spark!</h1>
-              <p class="card-text">08/26</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
 </div>
             <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
-            <h3 class="card-title text-start">204 Likes</h3>
-            <p class="card-text text-start">This is an example of a very good photo that you can post on instagram</p>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on instagram</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title">My crazy dog Spark!</h1>
-              <p class="card-text">08/26</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
             <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
-            <h3 class="card-title text-start">204 Likes</h3>
-            <p class="card-text text-start">This is an example of a very good photo that you can post on instagram</p>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on instagram</p>
           </div>
 
-          <div class="card">
+          <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title">My crazy dog Spark!</h1>
-              <p class="card-text">08/26</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
             <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
-            <h3 class="card-title text-start">204 Likes</h3>
-            <p class="card-text text-start">This is an example of a very good photo that you can post on instagram</p>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on instagram</p>
           </div>
-          <div class="card">
+          <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title">My crazy dog Spark!</h1>
-              <p class="card-text">08/26</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
             <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
-            <h3 class="card-title text-start">204 Likes</h3>
-            <p class="card-text text-start">This is an example of a very good photo that you can post on instagram</p>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3 ">This is an example of a very good photo that you can post on instagram</p>
           </div>
 
         </div>
